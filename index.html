@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Programming Pathshala Landing Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <span>Programming Pathshala</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-links">
+                <a class="nav-link" href="#">
+                    <div class="nav-link-content">
+                        <span>Fellowship Program</span>
+                        <span class="nav-subtitle">Launch Your Career</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <div class="nav-link-content">
+                        <span>Renaissance</span>
+                        <span class="nav-subtitle">Interview Prep</span>
+                    </div>
+                </a>
+                <a class="nav-link" href="#">
+                    <span>Certificated Courses <i class="fas fa-chevron-down"
+                            style="font-size: 0.75rem; margin-left: 0.25rem;"></i></span>
+                </a>
+                <a class="nav-link" href="#">
+                    <span>Resources <i class="fas fa-chevron-down"
+                            style="font-size: 0.75rem; margin-left: 0.25rem;"></i></span>
+                </a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="hidden md-flex" style="gap: 1rem; align-items: center;">
+                <a href="#" style="color: var(--primary); font-weight: 500; font-size: 0.875rem;">Log In</a>
+                <a href="#" class="btn btn-primary">Start 7-Days Free Trial</a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="md-hidden">
+                <button style="border: none; background: none; font-size: 1.25rem; color: #6b7280; cursor: pointer;">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+
+            <div class="mobile-menu hidden" id="mobile-menu">
+                <a href="#" class="mobile-nav-link">Fellowship Program</a>
+                <a href="#" class="mobile-nav-link">Renaissance</a>
+                <a href="#" class="mobile-nav-link">Certificated Courses</a>
+                <a href="#" class="mobile-nav-link">Resources</a>
+                <div style="border-top: 1px solid #e5e7eb; margin: 0.5rem 0;"></div>
+                <a href="#" class="mobile-nav-link">Log In</a>
+                <a href="#" class="btn btn-primary" style="width: 100%; justify-content: center;">Start 7-Days Free
+                    Trial</a>
+            </div>
+            <script>
+                const menuBtn = document.querySelector('.md-hidden button');
+                const mobileMenu = document.getElementById('mobile-menu');
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            </script>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Become a Tech Pro!</h1>
+                    <p class="hero-subtitle">Transform Your Skills with Our Expert-Led Courses!</p>
+                    <p class="hero-description">
+                        Gain hands-on experience, improve your coding skills, and accelerate your tech career with
+                        expert guidance and support.
+                    </p>
+
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <img alt="Student" class="avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo-KCxfae23gCmKuHIz6Xyv7JyGUSobHZjxI5OklzbAWtp7vybp2uiJ4I5Ny5ZmYiUb9TTVRSw36lplOa00degRig3zlMvNLNf4fZx9FspwongXvXGUs9xxSQXchLfiGsQ1OOXb4Mae-gx-QRw9DYeihS5JINUQYuJ5WqI5jx9Z2AyNZL5_mad3xZZvLS3HGTKxCJzCayTaGkgnQFztl2eSUZIK5lNa8UGD_Tg1unAtI4T877i-A9-CcCLVbsPg5ALs3fjN_O2xw" />
+                            <img alt="Student" class="avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI5YU2zO-LhZXdLguDz2EyywwInbpEZyQRj_u04i9YA9canA3QXeDOFzrLJXh8oHmO0tYRWl4eskR5BECcYloSem_u50PCbkadc7X1MNuH23zE4rIhjRTtAtcO0eRKjytzDvWZ94HXMmCECFqf6jYBxPpzMjKyT0zm7ui86ilexnLoDAvLWma5KXxP5RlLo7LjSJpEfe6MC9D6O1S0fNCDWv-4xNiGjvUWrR2jyanVjaD5E69paDI0LNuhPAIprmeG7DB1-8aqiA" />
+                            <img alt="Student" class="avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFmZz0DH5jmaXlr85WXLBap-khjemcfP2UQB6_9guLl7gKBEGrc7HapkIs05whxVVE8M2kcDj2oThHTJLDf5KBo9y3H0UayjWaB5TnpcCGavIkaR10QYL-SgGMwxB785GHZ0NOfBqKSveUeUK_RzazpZ7mg9TPMQMtocbStzxxEVYeOuG2aJBvq26xKEbjQnaRVrYkm4EqKIT90ZxVLazeX8CFSr4LhFoTCyTRYHj7q3x-aBZqW6RYszGPIkF6u6a8P4HWpR0IAQ" />
+                            <div class="avatar-count">+</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; align-items: center;">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.8/5</span>
+                            </div>
+                            <span class="trusted-text">Trusted by 25000+ Students</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary"
+                            style="padding: 0.75rem 1.5rem; gap: 0.5rem; box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.5);">
+                            Start 7-Days Free Trial <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline"
+                            style="padding: 0.75rem 1.5rem; gap: 0.5rem; backdrop-filter: blur(4px);">
+                            View Courses <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-form-container">
+                    <div class="hero-form">
+                        <form class="flex" style="flex-direction: column; gap: 1rem;">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input class="form-input" id="name" placeholder="Enter your full name" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input class="form-input" id="email" placeholder="Enter your email address"
+                                    type="email" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone number</label>
+                                <div class="phone-input-group">
+                                    <span class="country-code">
+                                        🇮🇳 <i class="fas fa-chevron-down"
+                                            style="font-size: 0.75rem; margin-left: 0.25rem;"></i>
+                                    </span>
+                                    <input class="form-input phone-input" id="phone"
+                                        placeholder="Enter your 10-digit number" type="tel" />
+                                </div>
+                            </div>
+                            <p class="form-note">
+                                We have a strict no-spam policy and will only contact you regarding your application.
+                            </p>
+                            <button class="btn btn-primary w-full py-3"
+                                style="font-weight: 700; font-size: 1rem; margin-top: 0.5rem;" type="button">
+                                Book A Free Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stories Section -->
+    <section class="stories-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title" style="margin-bottom: 0.5rem;">They did it, so can you!</h2>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div style="display: flex; margin-left: 0.5rem;">
+                            <img alt="user" class="story-avatar"
+                                style="width: 1.5rem; height: 1.5rem; margin-left: -0.5rem; border: 1px solid white;"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Tu2QC61PgjgQdxCgtusLHa702hS83wPwn83_nYOzraRZrU1Q-peAanf5wHJG4MX1Okh_htu0bbfkuqR_i4x-Z4Vh1fw4-mIy8DyZC_K64pit1b8S5AtDKumFqH6_plpbWW-0GiYIMhUbxwF8mFuWBI3B5GgCAhPlAJVscXdVfnd9ks7KS2N9GRyURwec8apu2JgMiv5hFrkRNY7fxefTrVNCot4D2YEyKcVQP0oRwtvmZdSCi2BoLoEVLfK8lm3pjXX62yHdtA" />
+                            <img alt="user" class="story-avatar"
+                                style="width: 1.5rem; height: 1.5rem; margin-left: -0.5rem; border: 1px solid white;"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcGJ1PgB6Uyzp5WmpXJYdEpPSUeGnzSWVdqHi53hM3dcDakQgWbDwsrxqgOzjcPQJ8XABgIofssXtop50swME0LW6S4cIZfwug11DWeUhcVDz19TAMyGXkgW9qOhZEn0PjwF4UJ35NFEmdUEBBOKhK4CyK4s2bawNs1xm7RXsoQUb-Omuqc8XNJTeln_uBEziX0ZlCfaCjhE9OPuOx9h4i8k02jWx5-nuG5gxvxnbjHW9uPhaP_s-_qRE-kCEgPeDXJCUntoZMtw" />
+                            <img alt="user" class="story-avatar"
+                                style="width: 1.5rem; height: 1.5rem; margin-left: -0.5rem; border: 1px solid white;"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3UyIqLYzKagAqraX52_flS0hKKA6Qho6bGlNJ0kZMj6QQvEl6O1u7w-xMQ6IVIPbXtN-rsYDI8PccZZIkOm353Hf5BN-ZmAvz2PHSFJkMyX0MT506FrWGdsq7DgfAJ09gerQeOGUEm8EHd-qi6Qn57JqPgOJ2lWOyFoA3FM2Cvl4P4Tez6Qb6J0PMau3YA8JLlbOtDg9jwvAtv6bvL-Y-_lKuzarWEI2r0nP9muDVRT-WVJy8LCeGIwUL3aTZtz2dBXxH0uxhxA" />
+                        </div>
+                        <div class="rating" style="display: flex;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="trusted-text" style="color: #6b7280;">Trusted by 25000+ Students</span>
+                    </div>
+                </div>
+                <a href="#" class="btn" style="background-color: #1f2937; color: white; gap: 0.5rem;">
+                    Read More Stories <i class="fas fa-arrow-right" style="font-size: 0.75rem;"></i>
+                </a>
+            </div>
+
+            <div class="stories-grid">
+                <!-- Story 1 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-user">
+                            <img alt="Balvinder Kaur" class="story-avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuxevSISPYzxU6vGxNtTi7rmBsSVKI1h4DAQHuTDMQ9LxFz3YIJkl9bAAMx0LKm9EQV6sjmfy6-38NDFhTzxCwGExwkn2G-D5WwBsMGb1MyGEkTXmoO2XqxuRCBv5nbhc__saCJqw0dSQPck0657JglqTlxbcrq-vyvZGoKc189QZHoNKbEMdelNkfPetCozWC4Jjd9P-YJ_dMWNWkZMj0uYgkuexCcmgqDYUxWMSAo8rI3fY6NWrXj5o78GbuD_zzlPcTAduvIg" />
+                            <div>
+                                <h4 class="story-name">Balvinder Kaur</h4>
+                                <p class="story-role">SDE @ <span>policybazaar</span></p>
+                            </div>
+                        </div>
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </div>
+                    <p class="story-text">
+                        This course covers everything in-depth and in a very structured way. There is never enough to
+                        learn and grow. I felt very prepared for my interviews after being a part of this course, and
+                        could enhance my DSA and problem solving skills in greater depth.
+                    </p>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-user">
+                            <img alt="Ayush Srivasthva" class="story-avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYW-H5pqbPRsMZW-3dwIHFv0x8Kl_3NjyzQ5-YamcLcbK4sPUm-4vwxfNqS3T_giuxFX7wrLsDKCxy14dADPGn0YIL5XCwueIYN3uUfPcHPd6wWch5AfWZ3-lUNTp6e-4R3XR6ITMhjEEBIBvSXAXTXQ0o7qVvJ76o_npdDieZFHcxUzcJo3nzDjv575ALhjuPIe0RmBP14LujJQuwN2XHfgnT_FId-uupj3drEtFN2P6Gh5bK1wVRvz3S8epL9UPwTluarXTELA" />
+                            <div>
+                                <h4 class="story-name">Ayush Srivasthva</h4>
+                                <p class="story-role">SDE @ <span class="blue">PayPal</span></p>
+                            </div>
+                        </div>
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </div>
+                    <p class="story-text">
+                        Fortunately, came across Programming Pathshala on Quora and I was amazed to see awesome reviews.
+                        I went through the website and checked the curriculum, and moreover the fee of the course was in
+                        my budget.
+                    </p>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-user">
+                            <img alt="Chetan Verma" class="story-avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgSXxo2gkbgnhhtF2AYSwgKBs5DipfSE25IO2a4Sf58_0P-wBdQhBNOu91S_e27xT62aS2KAJ4uBrsUCgU22ado5kdmbEUxCg3dzOWHpFFQ4y-DiPAHMi8boa4K6WmQhYKQ5SVG3_i9yFAvTmeioX7QHQM5rPL2sOGrGeLXXL6qLhVohjYtrFSRuI4RV-THf6gydE-7v8wvU-oYeX0mNno0I4xhiSj1p3RuYX3EKePRcNzg8Baet_EbBKRa-JWxI8cu5WZ2WMoQQ" />
+                            <div>
+                                <h4 class="story-name">Chetan Verma</h4>
+                                <p class="story-role">SDE @ <span>innovaccer</span></p>
+                            </div>
+                        </div>
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </div>
+                    <p class="story-text">
+                        Thanks to the remarkable course - Low Level Design, I am now skilled at navigating complex
+                        architectural challenges, evaluating multiple solutions with precision, and making informed
+                        decisions by weighing their respective advantages and disadvantages.
+                    </p>
+                </div>
+
+                <!-- Story 4 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-user">
+                            <img alt="Shivani Mehta" class="story-avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNgmC5Qwh9R6i_vTsXWfB-k7Mp1cHHgn8ovzF-IYZyizRHPgBlsJAoNq5cwenWc9WS-QmY7oJtEX5qNdmPj6WJBnfs1q1gJRrqx3XAf-WyUzWSamorYTCEoBkV4ifMpem6bDIdQg84B1q1lsvUxSa3shA2uljLhRhPAyciAOdLKQoAcqxMX4jQa3wsn1UInxo68luXJ2S9sYHQUpbAcnLf3SSmGnxXJ32v7w2JiyWz1b2qe3d4_JadNeL0wEYbFLij2a0obhe0bw" />
+                            <div>
+                                <h4 class="story-name">Shivani Mehta</h4>
+                                <p class="story-role">SDE @ <span>policybazaar</span></p>
+                            </div>
+                        </div>
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </div>
+                    <p class="story-text">
+                        Yes, so I started with Programming Pathshala in their first ever batch and it was just when
+                        covid started spreading enormously. I wasn't very good with DSA initially but as the time went
+                        by I kept practicing and with doubt resolution sessions, resume building sessions, Live classes
+                        etc.
+                    </p>
+                </div>
+
+                <!-- Story 5 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-user">
+                            <img alt="Tanush Angural" class="story-avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHkxOCB4qvjmFxt-fDr2gtolTzb-F4sCI_nne_ikzIQYIAjJT_H56dDhZCigR5bfCDG-_6U-YGsEtY0__9-U0ilwQZEr_eM_vZHvkI7HFWa6I-eWC5osV0FVHSQGhfaQaeTCSMeANRbIQYr0jHy45yexsWBT1TlgVfHjc7I017ypbHCKwuSgZKYzq-vMKSCxxux1MUQOqeFi3tNE9yqSKnaC4bcYJ_RpVItoUPJ8WNWlxe7sElomqN4IzVRohSLPHomL2Kcmpt8g" />
+                            <div>
+                                <h4 class="story-name">Tanush Angural</h4>
+                                <p class="story-role">SDE @ <span class="blue">PayPal</span></p>
+                            </div>
+                        </div>
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </div>
+                    <p class="story-text">
+                        Well, in the beginning of third year, I wanted to learn data structures and algorithms so, I
+                        started searching for it online from multiple different websites and gained a bit of knowledge
+                        about DSA. By the end of my third year I came across Programming Pathshala which is absolutely a
+                        great platform to learn algorithms.
+                    </p>
+                </div>
+
+                <!-- Story 6 -->
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-user">
+                            <img alt="Gurinder Kaur" class="story-avatar"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk2GFMMWyzZcqCHX0WQpXMR8OyOK4KpuYsFotrMn1R8Y0z-kms3fmmS7CARJLR3vkbFV3_jwQlWuPOyYL0KVl3drdOgY4YfZSFPG28gcg_pzOeeyob8NV8G4jUv1K2z3RRzmi3b0tzhVjoW0rkTnvoe8Q2zPHAaMjfl0sVjgNmx7Q9ghqtY0rxBs6vWegX1Og9NNOazwx_4xXryE3Lw_EIC_0_3GV5l-x8Xg6tF3HWYQjY0P_g_3NaArQoKKQIuy565IpvJJqC2w" />
+                            <div>
+                                <h4 class="story-name">Gurinder Kaur</h4>
+                                <p class="story-role">SDE @ <span>innovaccer</span></p>
+                            </div>
+                        </div>
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </div>
+                    <p class="story-text">
+                        I remember joining a workshop in June-July 2019 which was held by Programming Pathshala. But
+                        after it got over in a month, I stopped practicing problems. I later joined another training
+                        program by Programming Pathshala itself in the year 2019-20.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="instructor-section">
+        <div class="instructor-container">
+            <h2 class="instructor-title">
+                Learn with <span class="underline-decoration">Industry Experienced Instructor</span>
+            </h2>
+
+            <div class="instructor-content">
+                <div class="instructor-image-wrapper">
+                    <div class="instructor-image-container">
+                        <img alt="Vivek" class="instructor-image"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvklCPpou85NV9JUG93AoWq4c0ujv5nsALLrJAljG5_GV0WTKdt1JYt2_d-P02qMT9i5O6M3rpHaIbxplq9qw6oiwfSjhwxFDs4gpx82ClDKc8p33YKhVA1h58_vP0LSRfLjMSMvsSgRyw00PDrNV9jm2hGOPDIrzb5eX5JcGj-aVRTkiONNuMcqCWOORJKQpYfi6IAk4XphsgNU7BGIWRmQ6C5o4PFSYZZnkeNWWwCTaZXR1AyHGfBWVJ1cj3VOPdKJ99ewxS5A" />
+                    </div>
+                    <div class="instructor-bg-circle"></div>
+                </div>
+
+                <div class="instructor-details">
+                    <p class="instructor-bio">
+                        Vivek has taught 10,000+ students through on campus workshops and online courses on Interview
+                        Preparation. He has worked at Amazon with its High Scale Systems for three years after
+                        graduating from IIT. He is loved by his students for his lucid in-depth explanations and ability
+                        to make people think through problems.
+                    </p>
+                    <h3 class="instructor-name">Vivekanand Vivek</h3>
+                    <p class="instructor-credential">IIT BHU Alumni, Ex-SDE <i class="fab fa-amazon"></i></p>
+                    <a href="#" style="color: #2563eb; font-size: 1.5rem;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="videos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Watch Free Videos on our YouTube Channel</h2>
+                <a href="#" class="btn" style="background-color: #dc2626; color: white;">
+                    Visit our Youtube Channel <i class="fas fa-external-link-alt"
+                        style="font-size: 0.75rem; margin-left: 0.5rem;"></i>
+                </a>
+            </div>
+
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <img alt="Video Thumbnail" class="video-thumbnail"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWabGUKIQ__75W_aaZoUzu72wIGG0DWacb1k0uCtrgSQHo9RotzJpUlX1yLAXKnWq2o_1xX7R6R1uAcQQeGTdlxC40mLxGypVb3JNT7wG_rgfjay7pL3KruyM00yXnbL-AwDQxd_UcSQCOX04KU-zgK9e5D_dZ_kOTwl31edu5vPvUBZpsixbILuNzumPHDnoz2HOotqIoBVrGpE2ALO1Zy7AsVHnbE9Znb01nixkftLWPEwXiaqML_9ey7HIqFPhfHuOAw9mVyQ" />
+                    <div class="play-overlay">
+                        <div class="play-button"><i class="fas fa-play" style="margin-left: 0.25rem;"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Zeal Vagadia's Story: Journey to SDE at Amazon</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <img alt="Video Thumbnail" class="video-thumbnail"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUfhqtUOEtcch3jzcMA11qub2RgCesxXHcAEnVVefZrHR69O_IIb1Gjr98xaJ0fOpenESP2GUginJQPuDLMfXNVrkIYu-toyZ6j29zKx9NOb-3arwyRVR6-LbhM-uZSheuvx_iYGr1mx82owLULC2z2z2Pm-yaVhrWbn2ADeI0d_aHsAmraoMaS8x8UumJ8Hf2KJwUNE4P0QyWGCLG8dQqBf_r95k6gzspId78Rmx9Ir9iql8FK-5w_Y-0hdErTOuwCVUhp64GqQ" />
+                    <div class="play-overlay">
+                        <div class="play-button"><i class="fas fa-play" style="margin-left: 0.25rem;"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Landing my Dream Package just after Graduation</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <img alt="Video Thumbnail" class="video-thumbnail"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_yzj_bxnSzyIEMiKQ8SEh9JydL-jBH0rn6n6N92Ej7wgeM63jt1IA7foGdJEtLLJUfWN5UPjtGa9QngA9gQOm5anLauABWLPAq99NcrOdmH9or2UYutdxCAib9Uf-uim-sk4Oyq4XaVYu3KDkyOw0YlUtVjXeHvLJ7UQe3qu9ZbFoagPCmKy_sHqZP2zUbwmvRlWimXVBQDMkXlvLaWKVKS1cDvN3YiWO9Tku6V2UhnLhfhQW_DwKctw6fRa_8SyTvbKlSJMb3g" />
+                    <div class="play-overlay">
+                        <div class="play-button"><i class="fas fa-play" style="margin-left: 0.25rem;"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Code Review - What & Why is it done?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Your Go-To Blog for Tech, Career Growth, and Learning</h2>
+                <a href="#" class="btn" style="background-color: #1f2937; color: white;">Read More Blogs</a>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <div class="blog-card">
+                    <div class="blog-image-container">
+                        <div class="blog-image-overlay" style="background-color: var(--primary);">
+                            <h3 class="blog-overlay-title">Sliding Window : 2</h3>
+                        </div>
+                    </div>
+                    <h3 class="blog-title">Sliding Window(Print the Sum of Every K-Sized Subarray)</h3>
+                    <p class="blog-excerpt">
+                        When working with arrays, problems often involve looking at groups of elements, or 'windows,'
+                        within the array...
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-icon"><i class="fas fa-cube"></i></div>
+                        <div class="blog-meta-text">
+                            <span class="blog-author">Programming Pathshala</span>
+                            <span>September 25, 2024 • 5 Minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="blog-card">
+                    <div class="blog-image-container">
+                        <div class="blog-image-overlay" style="background-color: #4f46e5;">
+                            <h3 class="blog-overlay-title" style="font-family: serif; font-style: italic;">Sieve of
+                                Eratosthenes</h3>
+                        </div>
+                    </div>
+                    <h3 class="blog-title">Sieve of Eratosthenes</h3>
+                    <p class="blog-excerpt">
+                        Time Complexity: O(N log(log N)), where N is the total number of nodes across all lists. This
+                        complexity arises...
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-icon"><i class="fas fa-cube"></i></div>
+                        <div class="blog-meta-text">
+                            <span class="blog-author">Programming Pathshala</span>
+                            <span>September 25, 2024 • 8 Minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="blog-card">
+                    <div class="blog-image-container">
+                        <div class="blog-image-overlay"
+                            style="background-color: #1e40af; flex-direction: column; gap: 0.5rem;">
+                            <h3 style="color: white; font-weight: 700; font-size: 1.125rem;">JAVA ESSENTIALS:</h3>
+                            <p style="color: #bfdbfe; font-size: 0.875rem; text-decoration: underline;">A Simple
+                                Introduction to</p>
+                        </div>
+                    </div>
+                    <h3 class="blog-title">A Simple Introduction to JDK, JRE, and JVM</h3>
+                    <p class="blog-excerpt">
+                        I never thought I'd join Google because I already had my offer from Oracle, so I had the mindset
+                        that...
+                    </p>
+                    <div class="blog-meta">
+                        <div class="blog-icon"><i class="fas fa-cube"></i></div>
+                        <div class="blog-meta-text">
+                            <span class="blog-author">Programming Pathshala</span>
+                            <span>September 25, 2024 • 6 Minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div>
+                    <h4 class="footer-col-title">About Us</h4>
+                    <ul class="footer-links" style="color: #9ca3af;">
+                        <li><a class="footer-link" href="#">Join our Community</a></li>
+                        <li><a class="footer-link" href="#">Success Stories</a></li>
+                        <li><a class="footer-link" href="#">Blogs</a></li>
+                        <li><a class="footer-link" href="#">Events</a></li>
+                        <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+                        <li><a class="footer-link" href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="footer-col-title">Popular Programs</h4>
+                    <div class="footer-programs">
+                        <!-- Program 1 -->
+                        <div class="program-item">
+                            <div class="program-img">
+                                <img alt="Tech"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjg4mJKBjIFGMS97mrjbRlKc_SMRQVO2hlrhWTDmeHCegJ2JbXrsQCfpfUZKPqXPXa81kxZDcLGhY9v4_5GjeStJgSmaQ3gfMh41rAy5UxYAG9wefEZ3APmv7Cuuq9luJS6n_DG83tGqTRLXchgHZRdQTbBqOpkVHTMrCRQ0MHPrVvuWHUNTU72Wq_P4ZbSPnpnoa__GiByEc7NG0YPawyzPLIVJJKpbW39BO19D9smstuPzyffjqwRFHGKc2Se4P0M8FMpq5YJQ" />
+                            </div>
+                            <a href="#" class="footer-link" style="font-weight: 500;">Tech Fellowship Program</a>
+                        </div>
+                        <!-- Program 2 -->
+                        <div class="program-item">
+                            <div class="program-img">
+                                <img alt="Renaissance"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9EMj-9qvrJYB3X96gCGFs1e6AcF-UPNaI99ic4pC33Ddmvi3dqkETb3pp-RH5HnLZ5r3vqXCoIUnNUyF_3pUZS_rcgjLvfljPb8W2oQhDpf_BBRPUZNfHFaMk9e3Q9Ltv3VphmKzIu4S7nVklC6vc2i6HtuDvrMm4enE0uy7iiEEOUJJroAUZh5Gu_fmPTKUZeKu11JD7y90TzSQA5Y2U2Yhok9ducK3xLUD78Tm5JV3pVNa4rniOmTc1om-XgrppfNFyTYCHWg" />
+                            </div>
+                            <a href="#" class="footer-link" style="font-weight: 500;">Renaissance for Top Tech
+                                Companies</a>
+                        </div>
+                        <!-- Program 3 -->
+                        <div class="program-item">
+                            <div class="program-img">
+                                <img alt="Design"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLhih0tu6EZcOa97YnnXYfKvxlvtJsyzluR0SXji1BWkXrip8Bey4kkloVjqip6dBpecl7ZRkEXOdyuM2wxjylzkYLiRORJnqvOrubGEqkFwT0hSAyf63K2DAeN3yL3gLr9Qz56UMz7LJ5zCM0hk3YsmKwQSo8rz5bOzOPdf4uING__-cV9wBb62LXHqyV6YH9pxHPRjw4yuUT39W1e3he0iQPT4NKkz64BjeLoCCs2uUlhTd3ZRqemyvA9QoAaov1zRR1_Yn8Iw" />
+                            </div>
+                            <a href="#" class="footer-link" style="font-weight: 500;">Low Level Design & Concurrency</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="footer-col-title">More Courses</h4>
+                    <ul class="footer-links" style="color: #9ca3af;">
+                        <li><a class="footer-link" href="#">Backend Development with Java Spring Boot</a></li>
+                        <li><a class="footer-link" href="#">Data Structures & Algorithms Essential</a></li>
+                        <li><a class="footer-link" href="#">Become a Python Expert</a></li>
+                        <li><a class="footer-link" href="#">Begin with Programming in C++</a></li>
+                        <li><a class="footer-link" href="#">Frontend Engineering Pro</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="footer-col-title">Contact Us</h4>
+                    <ul class="footer-contact" style="color: #9ca3af; font-size: 0.75rem; margin-bottom: 1.5rem;">
+                        <li>
+                            <i class="fas fa-phone-alt" style="color: var(--primary); margin-top: 0.25rem;"></i>
+                            <span>+91 9999999999</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-top: 0.25rem;"></i>
+                            <span>1002, Grandslam Tower,<br />Noida Sector 62, Noida.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" style="color: var(--primary); margin-top: 0.25rem;"></i>
+                            <span>info@programmingpathshala.com</span>
+                        </li>
+                    </ul>
+                    <h4 class="footer-col-title">Social Links</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>All Right Reserved with ©Programming Pathshala</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
